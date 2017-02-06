@@ -1,5 +1,5 @@
 ﻿/*
-var Conference = Conference || {};
+ var Conference = Conference || {};
 
 Conference.checkedInAttendeeCounter = function() {
   var checkedInAttendees = 0;
@@ -21,23 +21,23 @@ Conference.checkedInAttendeeCounter = function() {
 
 var Conference = Conference || {};
 
-Conference.checkedInAttendeeCounter = function() {
-  "use strict";
+Conference.checkedInAttendeeCounter = function () {
+    "use strict";
 
-  var checkedInAttendees = 0,
-      self = {
-        increment: function() {
-          checkedInAttendees++;
-        },
-        getCount: function() {
-          return checkedInAttendees;
-        },
-        countIfCheckedIn: function(attendee) {
-          if (attendee.isCheckedIn()) {
-            self.increment();
-          }
-        }
-      };
+    var checkedInAttendees = 0,
+        self = {
+            increment: function () {
+                checkedInAttendees++;
+            },
+            countIfCheckedIn: function (attendee) {
+                if (attendee.isCheckedIn()) {
+                    self.increment();
+                }
+            },
+            getCount: function () {
+                return checkedInAttendees;
+            }
+        };
 
-  return self;
+    return self;
 };

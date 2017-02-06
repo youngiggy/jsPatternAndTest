@@ -7,6 +7,11 @@
   });
   describe('increment()', function() {
     // increment 테스트
+      it('increment를 호출하면 참가자 수가 증가한다', function () {
+          counter.increment();
+          expect(counter.getCount()).toBe(1);
+      });
+
   });
   describe('getCount()', function() {
     // getCount 테스트

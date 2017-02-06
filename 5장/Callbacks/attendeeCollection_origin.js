@@ -24,8 +24,8 @@ Conference.attendeeCollection = function() {
     },
 
     iterate: function(callback) {
-      attendees.forEach(function (attendee) {
-        callback(attendee);
+      attendees.forEach(function () {
+          callback();
       });
     }
   };
